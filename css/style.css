@@ -14,7 +14,7 @@
 }
 
 .Section_1{
-    background-image: url('/images/Rectangle\ 9.png');
+    background-image: url('./images/Rectangle\ 9.png');
     background-repeat: no-repeat;
     
 }
@@ -190,7 +190,7 @@
 }
 /*Section4*/
 .Section_4{
-background-image: url('/images/Bg.png');
+background-image: url('./images/Bg.png');
 display: block;
 text-align: center;
 position: relative;
@@ -336,8 +336,6 @@ padding-bottom: 2rem;
    margin-top: -7.5rem;
 }
 
-/*.card-text{
-}*/
 
 .card-link{
     margin-right: 0.5rem;
@@ -369,7 +367,7 @@ padding-bottom: 2rem;
 
 /*section 6*/
 .Section_6{
-    background-image: url('/images/Bg-map.png');
+    background-image: url('./images/Bg-map.png');
     width: 100%; 
     height: 100%;
     background-position: center;
