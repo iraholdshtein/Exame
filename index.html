@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" type="text/css"href="./css/style.css">
     <title>Project</title>
 </head>
 <body>
@@ -32,11 +32,10 @@
         </div>
         <div class="Section_2">
             <div class="section_2-item conteiner-icon">
-                <img  class="icon-section2" src="./images/Rectangle 8.png" alt="Icon-AboutUs"> 
-                <div class="block">
-                     <img class="img-bg-about-us" src="./images/Icon-AboutUs.png" alt="About Us">
-                    <h2 class="section-title">ABOUT US</h2>
-                   
+                <img  class="icon-section2" src="./images/Rectangle_8.png" alt="Icon-AboutUs"> 
+                <div class="block-icon">
+                    <img class="img-bg-about-us" src="./images/Icon-AboutUs.png" alt="About Us">
+                    <h2 class="section-title">ABOUT US</h2>          
                </div>
             </div>
             <div class="section_2-item">
@@ -77,16 +76,15 @@
                     <div class="section_3-content">
                         <img src="./images/Icon-Services.png" class="section_3-icon" alt="Icon-Services">
                         <h2 class="section-title">OUR SERVICES</h2>
-                        <p class="text-img">“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”</p><p class="text-img footnote"><br> - Borat -</p>  
+                        <p class="text-img">“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”</p><p class="text-footnote"><br> - Borat -</p>  
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="Section_4">
             <img class="img-icon-section4" src="./images/Icon-Works.png" alt="Works">
             <h2 class="section-title">RECENT WORKS</h2>
-                <div class="slideshow-container">
+                <div class="slideshow-container">      
                     <div class="mySlides fade">
                         <img src="./images/Showcase.png" alt="Showcase"> 
                     </div> 
@@ -102,89 +100,243 @@
                     <div class="mySlides fade">
                         <img src="./images/hot-dog-406019_640.kwlng.jpg" alt="hot-dog"> 
                     </div> 
-
+                    <a  class="prev" onclick="plusSlides(-1)"&#10094;><img  class="btn-prev" src="./images/interface-arrow-left.svg" alt="prev"></a>
+                    <a class="next" onclick="plusSlides(1)"&#10095;><img class="btn-next" src="./images/interface-arrow-right.svg" alt="next"></a>
                 </div>
-                    <a  class="prev" onclick="plusSlides(-1)"&#10094;><img  class="btn-prev" src="./images/interface - arrow left.svg" alt="prev"></a>
-                    <a class="next" onclick="plusSlides(1)"&#10095;><img class="btn-next" src="./images/interface - arrow right.svg" alt="next"></a>
-                <div class="dot-grop" >
+                <div class="dot-group" >
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
                 </div>
                 <button type="button" class="btn btn-gallery">View Gallery</button>
         </div>
         <div class="Section_5">
             <h2 class="section-title" style="color: #665F60;">MEET OUR TEAM</h2>
             <img class="img-bg-about-us" src="./images/Icon-Team.png" alt="About Us">
-                <div class="conteiner-section5">  
-                    <div class="slide-item1">
-                        <img class="slide-item1-foto" src="./images/Ellipse 3.png" alt="Showcase"> 
-                        <div class="card-body">
-                             <div class="overlay">MIGUEL OBRAIN</div>
-                                <p class="card-text">CEO & Founder</p>
+                <div class="multiple-items"> 
+                   
+                        <div class="slide-item1">   
+                            <img class="slide-item1-foto" src="./images/Ellipse_3.png" alt="Showcase"> 
+                            <div class="card-body">
+                                <div class="overlay">MIGUEL OBRAIN</div>
+                                    <p class="card-text">CEO & Founder</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                            </div>
+                            
                         </div>
+                     
+                        <div class="slide-item1">
+                                <img class="slide-item1-foto" src="./images/Ellipse_2.png" alt="Showcase"> 
+                                    <div class="card-body">
+                                        <div class="overlay">JACKIE CARROLL</div>
+                                        <p class="card-text">Art Director</p>
+                                    </div>   
+                            <div class="card-footer">
+                                <a href="#" class="card-link"><img src="./images/behance.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="slide-item1">
+                            <img class="slide-item1-foto" src="./images/Ellipse_1.png" alt="Showcase">
+                            <div class="card-body">  
+                                <div class="overlay">IDA MORRISON</div>
+                                <p class="card-text">Designer</p>
+                            </div> 
+                            <div class="card-footer">
+                                <a href="#" class="card-link"><img src="./images/behance.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                            </div>
+                        </div>
+                   
+                   
+                   
+                        <div class="slide-item1">
+                            <img class="slide-item1-foto" style="border-radius: 50%; border: 9px solid #EBEBEBed; width: 259px; height: 257px;" src="./images/Nastya.png" alt="Nastya"> 
+                                <div class="card-body">
+                                    <div class="overlay">ANASTASIIA</div>
+                                        <p class="card-text">Front-End developer</p>
+                                </div>
+                                <div class="card-footer" >
+                                    <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                                </div>
+                        </div> 
+                        <div class="slide-item1">
+                            <img class="slide-item1-foto" style="border-radius: 50%; border: 9px solid #EBEBEBed; width: 259px; height: 257px;" src="./images/Iliya.png" alt="Iliya"> 
+                                <div class="card-body">
+                                    <div class="overlay">ILIIA</div>
+                                    <p class="card-text">Front-End developer</p>
+                                </div>   
                         <div class="card-footer">
+                            <a href="#" class="card-link"><img src="./images/behance.svg"></a>
                             <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
                             <a href="#" class="card-link"><img src="./images/google+.svg"></a>
                             <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
                             <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
                         </div>
-                    </div> 
-                    <div class="slide-item1">
-                        <img class="slide-item1-foto" src="./images/Ellipse 2.png" alt="Showcase"> 
-                            <div class="card-body">
-                                <div class="overlay">JACKIE CARROLL</div>
-                                   <p class="card-text">Art Director</p>
-                            </div>   
-                       <div class="card-footer">
-                           <a href="#" class="card-link"><img src="./images/behance.svg"></a>
-                           <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
-                           <a href="#" class="card-link"><img src="./images/google+.svg"></a>
-                           <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
-                           <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
-                       </div>
-                    </div> 
-                    <div class="slide-item1">
-                         <img class="slide-item1-foto" src="./images/Ellipse 1.png" alt="Showcase">
-                         <div class="card-body">  
-                            <div class="overlay">IDA MORRISON</div>
-                            <p class="card-text">Designer</p>
                         </div> 
+                        <div class="slide-item1">
+                            <img class="slide-item1-foto" style="border-radius: 50%; border: 9px solid #EBEBEBed; width: 259px; height: 257px;" src="./images/Maks.png" alt="Maks">
+                            <div class="card-body">  
+                                <div class="overlay">MAX</div>
+                                <p class="card-text">Front-End developer</p>
+                            </div> 
+                            <div class="card-footer">
+                                <a href="#" class="card-link"><img src="./images/behance.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                            </div>
+                        </div> 
+                    
+                        <div class="slide-item1">
+                            <img class="slide-item1-foto" style="border-radius: 50%; border: 9px solid #EBEBEBed; width: 259px; height: 257px;" src="./images/Radomir.png" alt="Nastya"> 
+                            <div class="card-body">
+                                <div class="overlay">RADOMIR</div>
+                                    <p class="card-text">Front-End developer</p>
+                            </div>
+                            <div class="card-footer" >
+                                <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                            </div>
+                        </div> 
+                        <div class="slide-item1">
+                            <img class="slide-item1-foto" style="border-radius: 50%; border: 9px solid #EBEBEBed; width: 259px; height: 257px;" src="./images/Irina.png" alt="Iliya"> 
+                                <div class="card-body">
+                                    <div class="overlay">IRINA</div>
+                                    <p class="card-text">Front-End developer</p>
+                                </div>   
                         <div class="card-footer">
-                           <a href="#" class="card-link"><img src="./images/behance.svg"></a>
-                           <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
-                           <a href="#" class="card-link"><img src="./images/google+.svg"></a>
-                           <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
-                           <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                            <a href="#" class="card-link"><img src="./images/behance.svg"></a>
+                            <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                            <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                            <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                            <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
                         </div>
-                    </div> 
+                        </div> 
+                        <div class="slide-item1">
+                            <img class="slide-item1-foto" style="border-radius: 50%; border: 9px solid #EBEBEBed; width: 259px; height: 257px;" src="./images/Lesay.png" alt="Maks">
+                            <div class="card-body">  
+                                <div class="overlay">LESYA</div>
+                                <p class="card-text">Front-End developer</p>
+                            </div> 
+                            <div class="card-footer">
+                                <a href="#" class="card-link"><img src="./images/behance.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                            </div>
+                        </div>  
                    
-                        <a  class="conteiner-section5-prev" onclick="plusSlides(-1)"&#10094;><img  class="btn-prev" src="./images/interface - arrow left.svg" alt="prev"></a>
-                        <a class="conteiner-section5-next" onclick="plusSlides(1)"&#10095;><img class="btn-next" src="./images/interface - arrow right.svg" alt="next"></a>
+                        <div class="slide-item1">
+                                <img class="slide-item1-foto" style="border-radius: 50%; border: 9px solid #EBEBEBed; width: 259px; height: 257px;" src="./images/Lara.png" alt="Nastya"> 
+                                <div class="card-body">
+                                    <div class="overlay">LARA</div>
+                                        <p class="card-text">Front-End developer</p>
+                                </div>
+                                <div class="card-footer" >
+                                    <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                                </div>
+                        </div> 
+                        <div class="slide-item1">
+                                <img class="slide-item1-foto" style="border-radius: 50%; border: 9px solid #EBEBEBed; width: 259px; height: 257px;" src="./images/Semen.png" alt="Iliya"> 
+                                    <div class="card-body">
+                                        <div class="overlay">SEMYON</div>
+                                        <p class="card-text">Front-End developer</p>
+                                    </div>   
+                            <div class="card-footer">
+                                <a href="#" class="card-link"><img src="./images/behance.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                            </div>
+                         </div> 
+                        <div class="slide-item1">
+                            <img class="slide-item1-foto" style="border-radius: 50%; border: 9px solid #EBEBEBed; width: 259px; height: 257px;" src="./images/Andrey.png" alt="Maks">
+                                <div class="card-body">  
+                                    <div class="overlay">ANDRIY</div>
+                                    <p class="card-text">Team-Leader</p>
+                                </div> 
+                                <div class="card-footer">
+                                    <a href="#" class="card-link"><img src="./images/behance.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                                    <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+                                </div>
+                        </div>     
+                   
+                   
                 </div>
-
-
         </div>
         <div class="Section_6">
-            <img class="img-icon-section4" src="./images/Layer 7.png" alt="Works">
+            <img class="img-icon-section4" src="./images/Layer7.png" alt="Works">
             <h2 class="section-title">GET IN TOUCH</h2>
             <div class="sidenav">
-                <a  class="sidenav-item adress"><img src="./images/Icon-Address.png"></a><br>
-                <a  class="sidenav-item phone" ><img src="./images/Layer 8.png"></a>
+                <div class="sidenav-conteiner conteiner-adress">
+                    <a class="sidenav-item adress"><img src="./images/Icon-Address.png"> </a>
+                        <div class="item-text">Ikan Piranha Atas 220C Malang - East Java Indonesia</div> 
+                </div>
+                <div class="sidenav-conteiner conteiner-phone ">
+                    <a  class="sidenav-item phone" ><img src="./images/Layer8.png"></a>
+                </div>
             </div>
-            <form action="">
+            <form class="form-get"action="">
                 <label for="name"></label>
                 <input type="text" id="name" placeholder="Your Name*"> <label for="email"></label>
                 <input type="text" id="email" placeholder="Your Email*"name="email" ><br><br>
                 <label for="name"></label>
-                <input type="text" id="name" placeholder="Your Message*"><br><br>
-                <button type="button" class="btn btn-gallery">SEND MESSAGE</button>
-              </form> 
-
+                <input type="text" id="message" placeholder="Your Message*"><br><br>
+                <button type="button" class="btn btn-form ">SEND MESSAGE</button>
+            </form> 
+            <a href="#" class="arrow-up"><img src="./images/interface-arrow-top.svg" alt="Up" srcset=""></a>
+        </div>
+        <div class="footer">
+            <div class="footer-item item-left">
+                <h6>©2014 tulusdriyo. All Rights Reserved.</h6>
+            </div>
+            <div class="footer-item item-right">
+                <a href="#" class="card-link"><img src="./images/behance.svg"></a>
+                <a href="#" class="card-link"><img src="./images/linked-in.svg"></a>
+                <a href="#" class="card-link"><img src="./images/google+.svg"></a>
+                <a href="#" class="card-link"><img src="./images/facebook.svg"></a>
+                <a href="#" class="card-link"><img src="./images/twitter.svg"></a>
+            </div>
         </div>
        
     </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/file.js" type="text/javascript"></script>
+    <script src="./js/slide.js" type="text/javascript"></script>
+
+				
+
+    
 </body>
 </html>
