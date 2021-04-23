@@ -1,7 +1,7 @@
   @font-face {
     font-family: 'ProximaBold';
     src: url(/fonts/ProximaNova-Bold.eot);
-    src: url(/fonts/ProximaNova-Bold.eot) format('embedded-opentype'),
+    src: url(/fonts/ProximaNova-Bold.eot?#iefix) format('embedded-opentype'),
     url(/fonts/ProximaNova-Semibold.woff) format('woff'),
     url(/fonts/ProximaNova-Semibold.ttf) format('truetype');
     font-weight: normal;
