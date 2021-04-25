@@ -96,17 +96,10 @@ body.lock{
 }
 
 .nav-menu{
-    position: relative;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    padding-left: 2rem;
-    height: 6rem;
-    align-items: center;  
-}
-
-.nav-menu-icon {
-    margin-right: 11.8rem;   
+   display: flex;
+   padding: 1rem;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .header-title{
@@ -154,14 +147,26 @@ body.lock{
 }
 
 .header-menu{
-   position: fixed;
-   top: -100%;
-   right: 0;
-   width: 100%;
-   background-color: #DBDBDB;
-   z-index: 1;
-   transition: all 0.3s ease 0s;
-   overflow: auto;
+    font-size: 14px;
+    display: none;
+}
+
+.lock .header-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color:#EBEBEB;
+    z-index: 9000;  
+}
+
+.lock .header-link{
+    color: #9F9ACF;
+    font-size: 25px;
 }
 
 .header-menu.active{
@@ -412,7 +417,7 @@ body.lock{
 
 .multiple-items.slide-item1{
     min-width: 0;
-   
+    max-width: 250px;
     text-align: center;
     background-color: #FDFDFE; 
       
@@ -451,19 +456,28 @@ body.lock{
 
 .multiple-items .slick-prev{
     left: 0; 
-    background-image:url('/images/interface-arrow-left-dark.svg')  0 0 / 100% no-repeat;
-    width:1.38rem;
-    height: 1.38rem;  
+    background: url('/images/interface-arrow-left-dark.svg')  0 0 / 100% no-repeat;
+    background-size: contain;
+    width: 3rem;
+    height: 3rem;  
 }
 
  .multiple-items .slick-next{
      right: 0;
-     background-image: url('./images/interface-arrow-right-dark.svg') 0 0 no-repeat;
-     width:1.38rem;
-     height: 1.38rem;
+     background: url('/images/interface-arrow-right-dark.svg');
+     background-size: contain;
+     background-position: center center;
+     background-repeat: no-repeat;
+     width:3rem;
+     height:3rem;
  }
 
+.slick-dots{
+    list-style-type: none;
+}
+.slide-item1{
 
+}
 .card-body{
     width: 100%;
 }
@@ -539,14 +553,9 @@ body.lock{
     } 
     
     .nav-menu{
-        position: relative;
-        z-index: 2;
+        position: static;
         display: flex;
-        flex-direction:row;
-        justify-content: space-around;
-        padding-top: 2rem;
-        padding-left: 6rem;
-        height: 7rem;
+        padding: 1rem;
         align-items: center;
        
     }
@@ -556,25 +565,16 @@ body.lock{
         margin-top: -0.85rem;
     }
     
-    .header-burger{
-        display: none;
-    }
     
     .header-menu{
-      position: relative;
-      background-color: #9F9ACF;
-      opacity: 0.5;
-      top: 0;
-      left: 30rem;
+      
     }
      
     .menu-items{
         display: flex;
         flex-direction:row;
-        flex-wrap: nowrap;
-       /*justify-content: space-around;*/
+        flex-wrap: nowrap; 
         list-style: none;
-        margin: 0 , 0 , 0 , 25px;
     }
     
     .header-link{
@@ -917,16 +917,20 @@ body.lock{
     
     .multiple-items .slick-prev{
         left: 0; 
-        background-image:url('/images/interface-arrow-left-dark.svg')  0 0 / 100% no-repeat;
-        width:1.38rem;
-        height: 1.38rem;  
+        background: url('/images/interface-arrow-left-dark.svg')  0 0 / 100% no-repeat;
+        background-size: contain;
+        width: 3rem;
+        height: 3rem;    
     }
     
      .multiple-items .slick-next{
          right: 0;
-         background-image: url('./images/interface-arrow-right-dark.svg') 0 0 no-repeat;
-         width:1.38rem;
-         height: 1.38rem;
+         background-size: contain;
+         background-image: url('/images/interface-arrow-right-dark.svg');
+         background-position: center center;
+         background-repeat: no-repeat;
+         width: 3rem;
+         height: 3rem;
      }
     
     
@@ -1044,8 +1048,9 @@ body.lock{
         position: fixed;
         padding: 1rem 1rem;
         background-color: #9F9ACF;
-        top: 25rem;
-        right: 6rem;
+        bottom: 15px;
+        right: 5%;
+        z-index: 1000;
     }
     /*Footer*/
     .footer{
@@ -1073,4 +1078,19 @@ body.lock{
         align-self: center;
      } 
  }
+
+@media screen and (min-width: 992px){
+    .header-menu{
+        font-size: 16px;
+        display: block;
+    }
+
+    .header-burger{
+        display: none;
+    }
+
+
+}
+    
+
 

@@ -23,7 +23,7 @@ $(document).ready(function(){
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 320,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -51,7 +51,10 @@ $(document).ready(function(){
 
             
 $('.header-burger').click(function(event){
-    $('.header-burger','.header-menu').toggleClass('active');
+    $('body').toggleClass('lock');
+});
+
+$('.header-link').click(function(event){
     $('body').toggleClass('lock');
 });
                     
