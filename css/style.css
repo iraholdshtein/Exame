@@ -173,10 +173,6 @@
     padding: 5rem 1rem;
 }
 
-.icon-section2{
-
-}
-
 .block-icon {
     
     position: absolute;
@@ -368,7 +364,7 @@
 
     .multiple-items .slick-prev{
         left: 0; 
-        background: url('/images/interface-arrow-left-dark.svg')  0 0 / 100% no-repeat;
+        background: url('./images/interface-arrow-left-dark.svg')  0 0 / 100% no-repeat;
         background-size: contain;
         width: 2rem;
         height: 3rem; 
@@ -378,7 +374,7 @@
      .multiple-items .slick-next{
          right: 0;
          background-size: contain;
-         background-image: url('/images/interface-arrow-right-dark.svg');
+         background-image: url('./images/interface-arrow-right-dark.svg');
          background-position: center center;
          background-repeat: no-repeat;
          width: 2rem;
