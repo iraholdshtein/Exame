@@ -461,6 +461,45 @@
     font-family: 'ProximaBold';
     font-size: 1rem;
 }
+
+#name{
+    width: 15rem;
+    color: #EBEBEB;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-style: none;
+    margin-bottom: 1rem;
+}
+
+.form-get{
+   padding-top: 4rem;
+}
+
+#email{
+    width: 15rem;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-style: none;
+    padding-bottom: 1rem;
+}
+
+
+#message{
+    width: 15rem;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 12rem;
+    padding-left: 1rem;
+    border-style: none;
+}
+
 /*Footer*/
 
 .footer {
@@ -534,13 +573,7 @@
         position: relative;  
     }
 
-    .block-icon {
-        /*position: absolute;
-        display: block;
-        text-align: center;
-        margin-top: -30rem;
-        margin-left: 7.3rem;*/
-    }
+   
 
     /*Section3*/
 
@@ -741,45 +774,48 @@
 
     .card-link{
         margin-right: 0.5rem;
-        }
     }
-
+    
     .section-title{
         padding-top: 1rem;
         font-size: 2.2rem;
     }
+
     .slideshow-container{
         padding-top: 2rem;
     }
+
     /*Section6*/
     #name{
-        width: 17rem;
+        width: 20rem;
         color: #EBEBEB;
         border-radius: 4px;
         opacity: 0.5;
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-left: 1rem;
-        margin-right: 2.80rem;
         border-style: none;
+        margin-bottom: 1rem;
     }
+
     .form-get{
        padding-top: 4rem;
-    
     }
+
     #email{
-        width: 17rem;
+        width: 20rem;
         border-radius: 4px;
         opacity: 0.5;
         padding-top: 1rem;
-        padding-bottom: 1rem;
+        margin-bottom: 2rem;
         padding-left: 1rem;
         border-style: none;
+        padding-bottom: 1rem;
     }
     
     
     #message{
-        width: 37rem;
+        width: 20rem;
         border-radius: 4px;
         opacity: 0.5;
         padding-top: 1rem;
@@ -788,9 +824,7 @@
         border-style: none;
     }
        
-    
-
-    /*Footer*/
+     /*Footer*/
 
     .footer {
         background-color: #9F9ACF;
@@ -804,6 +838,7 @@
         padding-bottom: 1.68rem;
     }
     
+}
 
 @media (min-width: 768px){
     /*Section1*/
@@ -825,10 +860,6 @@
 
     /*Section2*/   
 
-    .block-icon{
-       
-
-    }
     /*Section3*/
     .section_3-content{
         width: 100%;
@@ -890,56 +921,53 @@
         background-image: linear-gradient(180deg, transparent, transparent 30%, #fff 30%, #FFFFFF 100%); 
         margin: 0 15px;
         flex-basis: 50%;  
-   }
+    }
 
-   /*Section6*/
-   .arrow-up{
-    position: fixed;
-    padding: 1rem 1rem;
-    background-color: #9F9ACF;
-    z-index: 1000;
-    bottom: 150px;
-    right: 2rem;
-   }
+    /*Section6*/
+    .arrow-up{
+        position: fixed;
+        padding: 1rem 1rem;
+        background-color: #9F9ACF;
+        z-index: 1000;
+        bottom: 150px;
+        right: 2rem;
+    }
 
-   #name{
-    width: 17rem;
-    color: #EBEBEB;
-    border-radius: 4px;
-    opacity: 0.5;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    margin-right: 2.80rem;
-    border-style: none;
-}
-.form-get{
-   padding-top: 4rem;
+    #name{
+        width: 17rem;
+        color: #EBEBEB;
+        border-radius: 4px;
+        opacity: 0.5;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        margin-right: 2.80rem;
+        border-style: none;
+    }
+    .form-get{
+    padding-top: 4rem;
 
-}
-#email{
-    width: 17rem;
-    border-radius: 4px;
-    opacity: 0.5;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    border-style: none;
-}
+    }
+    #email{
+        width: 17rem;
+        border-radius: 4px;
+        opacity: 0.5;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        border-style: none;
+    }
 
 
-#message{
-    width: 37rem;
-    border-radius: 4px;
-    opacity: 0.5;
-    padding-top: 1rem;
-    padding-bottom: 12rem;
-    padding-left: 1rem;
-    border-style: none;
-}
-   
-
-    
+    #message{
+        width: 37rem;
+        border-radius: 4px;
+        opacity: 0.5;
+        padding-top: 1rem;
+        padding-bottom: 12rem;
+        padding-left: 1rem;
+        border-style: none;
+    }     
 
 }
 
