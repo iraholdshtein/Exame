@@ -1810,7 +1810,7 @@
          margin-top: -6rem;
          top: 50%;
          z-index: 10;
-         font-size: 0;  
+         font-size: 0px;  
          border: 1px solid transparent;
          width: 22px;
          height: 38px;
@@ -1818,7 +1818,7 @@
     
     .multiple-items .slick-prev{
         left: 0; 
-        background: url('/images/arrow_left.png') 0 0 / 100% no-repeat; 
+        background: url('//images/arrow_left.png') 0 0 / 100% no-repeat; 
         background-size: contain;
         width: 2rem;
         height: 3rem;    
@@ -1826,7 +1826,7 @@
     
      .multiple-items .slick-next{
          right: 0;
-         background-image: url('/images/arrow_right.png') 0 0 / 100% no-repeat;
+         background-image: url('//images/arrow_right.png');
          background-position: center center;
          background-size: contain;
          width: 2rem;
