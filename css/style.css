@@ -173,18 +173,34 @@
     padding: 5rem 1rem;
 }
 
-.block-icon {
-    
+.pic_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.icon-section2 {
+   display: flex;
+
+}
+
+.block-icon{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:flex-start ;
+    align-items: center;
+     margin-top: 1rem; 
     position: absolute;
-    display: block;
-    text-align: center;
-    margin-top: -30rem;
-    margin-left: 10.5rem;
+    /* display: block; */
+    /* text-align: center; */
+    padding-top: 3rem; 
+    margin-left: -1.1rem;
+   
 }
 
 .section-title {
-    color: #FEFBFC;
-    font-family: 'ProximaSemibold';
+    color: white;
     font-size: 2.2rem;
 }
 
@@ -289,6 +305,14 @@
    
 .btn-gallery{
     background-color: #9F9ACF;
+}
+
+.img-icon-section4{
+    padding-top: 2rem;
+}
+
+.slideshow-container{
+    padding-top: 2rem;
 }
 
     
@@ -452,7 +476,16 @@
 }
 
 .footer-item{
+    max-width: 100%;
     margin-top: 1rem;
+ }  
+
+.item-left{
+ align-items: center;
+
+}
+
+.item-right{
     align-items: center;
 }
 
@@ -502,14 +535,12 @@
     }
 
     .block-icon {
-        position: absolute;
+        /*position: absolute;
         display: block;
         text-align: center;
         margin-top: -30rem;
-        margin-left: 7.3rem;
+        margin-left: 7.3rem;*/
     }
-
-    
 
     /*Section3*/
 
@@ -522,9 +553,10 @@
 
     .col-item {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: nowrap;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .section_3-content {
@@ -536,18 +568,16 @@
         text-align: center;
     }
 
-    .section_3-icon {
-        margin-top: 5.2rem;
+    .card{
+        width: 50%;
     }
 
-    .section-title {
-        color: #FEFBFC;
-        font-family: 'ProximaSemibold';
-        font-size: 2.2rem;
+    .section_3-icon {
+        margin-top: 3.2rem;
     }
 
     .text-img {
-        padding-top: 3.75rem;
+        padding-top: 2.35rem;
         font-size: 1.12rem;
         font-family: 'PTSans-Italic';
         text-align: justify;
@@ -557,7 +587,7 @@
 
     .text-footnote {
         font-family: 'PTSans-Bold';
-        padding-bottom: 7rem;
+        padding-bottom: 3rem;
     }
 
     /*Section4*/
@@ -581,7 +611,11 @@
     .prev{
         left: 4rem;
         border-radius: 3px 0 0 3px;  
-    }    
+    }
+    
+    .slideshow-container{
+        padding-top: 2rem;
+    }
 
     /*section5*/
     .Section_5{
@@ -712,7 +746,49 @@
 
     .section-title{
         padding-top: 1rem;
+        font-size: 2.2rem;
     }
+    .slideshow-container{
+        padding-top: 2rem;
+    }
+    /*Section6*/
+    #name{
+        width: 17rem;
+        color: #EBEBEB;
+        border-radius: 4px;
+        opacity: 0.5;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        margin-right: 2.80rem;
+        border-style: none;
+    }
+    .form-get{
+       padding-top: 4rem;
+    
+    }
+    #email{
+        width: 17rem;
+        border-radius: 4px;
+        opacity: 0.5;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        border-style: none;
+    }
+    
+    
+    #message{
+        width: 37rem;
+        border-radius: 4px;
+        opacity: 0.5;
+        padding-top: 1rem;
+        padding-bottom: 12rem;
+        padding-left: 1rem;
+        border-style: none;
+    }
+       
+    
 
     /*Footer*/
 
@@ -750,8 +826,20 @@
     /*Section2*/   
 
     .block-icon{
-        padding-left: 9rem;
+       
 
+    }
+    /*Section3*/
+    .section_3-content{
+        width: 100%;
+    }
+
+    .section_3-icon{
+        margin-top: 3rem;
+    }
+
+    .text-img{
+        text-align: center;
     }
 
     /*Section4*/
@@ -788,11 +876,10 @@
         .btn-prev:hover, .btn-next:hover {
             background-color: #DBDBDB;
         }
-    
 
-
-
-
+        .img-icon-section4{
+            padding-top: 2rem;
+        }
 
     /*Section5*/
 
@@ -802,9 +889,55 @@
     .slide-item1{
         background-image: linear-gradient(180deg, transparent, transparent 30%, #fff 30%, #FFFFFF 100%); 
         margin: 0 15px;
-        flex-basis: 50%;
-       
+        flex-basis: 50%;  
    }
+
+   /*Section6*/
+   .arrow-up{
+    position: fixed;
+    padding: 1rem 1rem;
+    background-color: #9F9ACF;
+    z-index: 1000;
+    bottom: 150px;
+    right: 2rem;
+   }
+
+   #name{
+    width: 17rem;
+    color: #EBEBEB;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-right: 2.80rem;
+    border-style: none;
+}
+.form-get{
+   padding-top: 4rem;
+
+}
+#email{
+    width: 17rem;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-style: none;
+}
+
+
+#message{
+    width: 37rem;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 12rem;
+    padding-left: 1rem;
+    border-style: none;
+}
+   
 
     
 
@@ -908,9 +1041,55 @@
     }
 
     /*Section2*/
+    .Section_2 {
+        background-color: #EBEBEB;
+        padding: 5rem 1.43rem 5rem 0;
+        
+    }
+
+    .pic_container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+    }
 
     .block-icon{
-        margin-left: 14rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content:flex-start ;
+        align-items: center;
+        margin-left: 0;
+        padding-top: 3rem; 
+        position: absolute;
+        
+    }
+
+    .section_2-item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        flex-wrap: nowrap;
+    }
+
+    .section-title{
+        font-size: 1.8rem;
+    }
+
+    .section_2-subtitle {
+        font-size: 1.25rem;
+        font-family: 'PTSans-Regular';
+        text-align: justify;
+        color: #665F60;
+        padding: 1.5rem;
+    }
+
+    /*Section3*/
+    .Section3{
+        padding-left: 8.43rem;
+        padding-right: 8.43rem;
+        background-color: #EBEBEB;
     }
 
     /*Section4*/
@@ -936,9 +1115,7 @@
         transition: 0.6s ease;
         position: absolute;
         top: 50%;
-        width: auto;
-       
-        
+        width: auto;    
     }
     
     .btn-prev, .btn-next{
@@ -949,6 +1126,11 @@
     .btn-prev:hover, .btn-next:hover {
         background-color: #DBDBDB;
     }
+
+    .slideshow-container{
+        padding-top: 2rem;
+    }
+
 
      /*Section5*/
 
@@ -969,9 +1151,49 @@
     padding: 1rem 1rem;
     background-color: #9F9ACF;
     bottom: 140px;
-    right: 5%;
+    right: 0;
     z-index: 1000;
+}  
+
+/*Section6*/
+
+
+#name{
+    width: 24rem;
+    color: #EBEBEB;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-right: 1.80rem;
+    border-style: none;
 }
+.form-get{
+   padding-top: 13.62rem;
+
+}
+#email{
+    width: 24rem;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-style: none;
+}
+
+
+#message{
+    width: 50rem;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 12rem;
+    padding-left: 1rem;
+    border-style: none;
+}
+
 
     
 }
@@ -1163,30 +1385,45 @@
         flex-wrap: nowrap;
         flex-direction: row;
         padding:6rem 13.43rem 6rem 13.43rem;
-        justify-content: space-around;
+        /*justify-content: space-around;*/
        
     }
     
     .section_2-item{
+        /* align-items: flex-start; */
         flex-direction: column;
+        position: relative;
     }
     
-    .conteiner-icon{
-        position: relative;  
+    .pic_container {
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
-    
+
+    .icon-section2 {
+       display: flex;
+
+    }
+
     .block-icon{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content:flex-start ;
+        align-items: center;
+         margin-top: 1rem; 
         position: absolute;
-        display: block;
-        text-align: center;
-        margin-top: -30rem;
-        margin-left: -2.3rem;
+        /* display: block; */
+        /* text-align: center; */
+        padding-top: 3rem; 
+        margin-left: -1.1rem;
+       
     }
     
     .section_2-subtitle {
         top: 0;
-        padding-right:1.76rem ;
-        padding-left: 4.88rem ;
+        padding-left: 4.5rem ;
         font-size: 1.1rem;
         font-family:'PTSans-Regular';
         text-align: left;
@@ -1237,7 +1474,7 @@
     .col-item{
         display: flex;
         flex-direction: column;
-        width: calc(100%/3);
+        max-width: calc(100% / 3);
         justify-content: center;
     
     }
@@ -1254,6 +1491,7 @@
     }
     
     .card{
+        width: 100%;
         color: #665F60;
         text-align: center;
         height: 400px;
@@ -1453,7 +1691,8 @@
     
     .multiple-items .slick-prev{
         left: 0; 
-        background: url('/images/interface-arrow-left-dark.svg')  0 0 / 100% no-repeat;
+        content: "\e5e1";
+        background: url('/images/interface-arrow-left-dark.svg')  0 0 / 100% no-repeat; 
         background-size: contain;
         width: 2rem;
         height: 3rem;    
@@ -1464,7 +1703,7 @@
          background-size: contain;
          background-image: url('/images/interface-arrow-right-dark.svg');
          background-position: center center;
-         background-repeat: no-repeat;
+         background-repeat: no-repeat; 
          width: 2rem;
          height: 3rem;
      }
@@ -1654,13 +1893,24 @@
         font-size: 1.25rem;
     }
 
-    .block-icon{
-        position: absolute;
-        display: block;
-        text-align: center;
-        margin-top: -30rem;
-        margin-left: -2.3rem;
+    .pic_container {
+        display: flex;
+        justify-content: center;
+        
     }
+
+    .block-icon{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content:flex-start ;
+        align-items: center;
+        
+        padding-top: 3rem; 
+        margin-left: -1.1rem;
+       
+    }
+
 
     
 }
